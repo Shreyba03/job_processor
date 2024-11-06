@@ -1,0 +1,71 @@
+Woo-hoo, sorted file was open!
+# of processors: 3
+
+Time 1:  Queue: Empty; CPU 1 Idle Time:1 Time 1:  Queue: Empty; CPU 2 Idle Time:1 Time 1:  Queue: Empty; CPU 3 Idle Time:1 
+Time 2:  Queue: Empty; CPU 1 Idle Time:2 Time 2:  Queue: Empty; CPU 2 Idle Time:2 Time 2:  Queue: Empty; CPU 3 Idle Time:2 
+Time 3:  Queue: Empty; CPU 1 Idle Time:3 Time 3:  Queue: Empty; CPU 2 Idle Time:3 Time 3:  Queue: Empty; CPU 3 Idle Time:3 
+Time 4:  Arrival: Overall Job: 1, Job B:1, Processing Time: 11;
+Time 4: -Begin Processing Job: 1, Job B:1 in CPU 1
+Time 4: -Queue: Empty; CPU 2 Idle Time:4 Time 4: -Queue: Empty; CPU 3 Idle Time:4 
+Time 5:  Queue: Empty; CPU 1 Run Time:1; 
+Time 5:  Queue: Empty; CPU 2 Idle Time:5 Time 5:  Queue: Empty; CPU 3 Idle Time:5 
+Time 6:  Queue: Empty; CPU 1 Run Time:2; 
+Time 6:  Queue: Empty; CPU 2 Idle Time:6 Time 6:  Queue: Empty; CPU 3 Idle Time:6 
+Time 7:  Queue: Empty; CPU 1 Run Time:3; 
+Time 7:  Queue: Empty; CPU 2 Idle Time:7 Time 7:  Queue: Empty; CPU 3 Idle Time:7 
+Time 8:  Arrival: Overall Job: 2, Job A:1, Processing Time: 4;
+Time 8: -Queue: 1 Job(s); CPU 1 Run Time:4; 
+Time 8: -Begin Processing Job: 2, Job A:1 in CPU 2
+Time 8: -Queue: Empty; CPU 3 Idle Time:8 
+Time 9:  Queue: Empty; CPU 1 Run Time:5; 
+Time 9:  Queue: Empty; CPU 2 Run Time:1; 
+Time 9:  Queue: Empty; CPU 3 Idle Time:9 
+Time 10:  Arrival: Overall Job: 3, Job C:1, Processing Time: 10;
+Time 10: -Queue: 1 Job(s); CPU 1 Run Time:6; 
+Time 10: -Queue: 1 Job(s); CPU 2 Run Time:2; 
+Time 10: -Begin Processing Job: 3, Job C:1 in CPU 3
+
+Time 11:  Queue: Empty; CPU 1 Run Time:7; 
+Time 11:  Queue: Empty; CPU 2 Run Time:3; 
+Time 11:  Queue: Empty; CPU 3 Run Time:1; 
+
+Time 12:  Arrival: Overall Job: 4, Job D:1, Processing Time: 20;
+Time 12:  Arrival: Overall Job: 5, Job B:2, Processing Time: 5;
+Time 12: -Begin Processing Job: 5, Job D:1 in CPU 1Time 12: -Queue: 2 Job(s); CPU 2 Run Time:4; 
+Time 12: -Complete Processing Job : 1, Job A : 1Time 12: -Queue: 2 Job(s); CPU 3 Run Time:2; 
+
+Time 13:  Queue: 2 Job(s); CPU 1 Run Time:1; 
+Time 13: -Begin Processing Job: 5, Job B:2 in CPU 2
+Time 13: -Queue: 1 Job(s); CPU 3 Run Time:3; 
+
+Time 14:  Queue: 1 Job(s); CPU 1 Run Time:2; 
+Time 14:  Queue: 1 Job(s); CPU 2 Run Time:1; 
+Time 14:  Queue: 1 Job(s); CPU 3 Run Time:4; 
+
+Time 15:  Arrival: Overall Job: 6, Job A:2, Processing Time: 1;
+Time 15: -Queue: 2 Job(s); CPU 1 Run Time:3; 
+Time 15: -Queue: 2 Job(s); CPU 2 Run Time:2; 
+Time 15: -Queue: 2 Job(s); CPU 3 Run Time:5; 
+
+Time 16:  Queue: 2 Job(s); CPU 1 Run Time:4; 
+Time 16:  Queue: 2 Job(s); CPU 2 Run Time:3; 
+Time 16:  Queue: 2 Job(s); CPU 3 Run Time:6; 
+
+Time 17:  Queue: 2 Job(s); CPU 1 Run Time:5; 
+Time 17:  Queue: 2 Job(s); CPU 2 Run Time:4; 
+Time 17:  Complete Processing Job : 2, Job B : 2Time 17:  Queue: 2 Job(s); CPU 3 Run Time:7; 
+
+Time 18:  Queue: 2 Job(s); CPU 1 Run Time:6; 
+Time 18: -Begin Processing Job: 6, Job B:2 in CPU 2
+Time 18: -Queue: 1 Job(s); CPU 3 Run Time:8; 
+
+Time 19:  Queue: 1 Job(s); CPU 1 Run Time:7; 
+Time 19:  Queue: 1 Job(s); CPU 2 Run Time:1; 
+Time 19:  Queue: 1 Job(s); CPU 3 Run Time:9; 
+
+Time 20:  Arrival: Overall Job: 7, Job B:3, Processing Time: 4;
+Time 20:  Arrival: Overall Job: 8, Job C:2, Processing Time: 9;
+Time 20: -Queue: 3 Job(s); CPU 1 Run Time:8; 
+Time 20: -Queue: 3 Job(s); CPU 2 Run Time:2; 
+Time 20: -Queue: 3 Job(s); CPU 3 Run Time:10; 
+Time 20: -Complete Processing Job : 3, Job C : 2
